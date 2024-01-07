@@ -1,0 +1,45 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5435,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "dbKitchen",
+            "database": "dbKitchen",
+            "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5436,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "dbOrder",
+            "database": "dbOrder",
+            "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5433,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "dbRestaurant",
+            "database": "dbRestaurant",
+            "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5434,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "dbCourtier",
+            "database": "dbCourtier",
+            "username": "postgres"
+        }
+    ]
+}

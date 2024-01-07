@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: my-food-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: restaurant-service
+          uri: lb://RESTAURANT-SERVICE
+          predicates:
+            - Path=/restaurant/**
+        - id: courtier-service
+          uri: lb://COURTIER-SERVICE
+          predicates:
+            - Path=/courtier/**
+        - id: kitchen-service
+          uri: lb://KITCHEN-SERVICE
+          predicates:
+            - Path=/kitchen/**
+        - id: order-service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/test/**
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
